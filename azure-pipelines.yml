@@ -11,7 +11,7 @@ pool:
 
 variables:
   resourceGroupName: "myResourceGroup"
-  location: "East US"
+  location: "eastus"
 steps:
 - task: AzureCLI@2
   inputs:
