@@ -12,9 +12,9 @@ steps:
 - task: AzureCLI@2
   inputs:
     azureSubscription: 'Visual Studio Enterprise Subscription(a6935d04-799b-4c3f-8d6d-bbab410e1917)'
-    scriptType: 'bash'
+    scriptType: 'ps'
     scriptLocation: 'inlineScript'
     inlineScript: |
-      az group create --name $resourceGroupName  --location $location
+      az group create --name $resourceGroupName --location $location
       az deployment group create --resource-group $resourceGroupName --template-file main.bicep
 
